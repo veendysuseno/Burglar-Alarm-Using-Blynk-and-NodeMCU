@@ -49,21 +49,17 @@ PIR (Passive Infrared), is a sensor that measures infrared radiation from an obj
 
 4. **Configure WiFi Credentials:**
 
-   - Replace `"Indobot"` and `"123456789"` with your WiFi SSID and password.
+   - Replace `"Veendy-Suseno"` and `"xxxxxxxxxx"` with your WiFi SSID and password.
 
 5. **Upload Code:**
 
-   - Open `burglar_alarm.ino` in Arduino IDE.
+   - Open `code.ino` in Arduino IDE.
    - Select the correct board (NodeMCU 1.0) and port.
    - Upload the code to the NodeMCU.
 
 ## Code
 
 ```cpp
-/*
-  Burglar Alarm Using Blynk and NodeMCU
-*/
-
 /*
   Burglar Alarm Using Blynk and NodeMCU
 */
