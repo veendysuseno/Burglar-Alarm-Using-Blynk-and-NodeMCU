@@ -2,6 +2,8 @@
 
 This project implements a simple burglar alarm system using the NodeMCU (ESP8266) and Blynk. The system uses a PIR (Passive Infrared) sensor to detect motion and sends notifications to the Blynk app when motion is detected.
 
+PIR (Passive Infrared), is a sensor that measures infrared radiation from an object. PIR works passively, therefore PIR only receives radiation and does not emit radiation. If this sensor is connected to an IoT device, the measurement data can be accessed from anywhere.
+
 ## Features
 
 - Detect motion using a PIR sensor
@@ -10,10 +12,12 @@ This project implements a simple burglar alarm system using the NodeMCU (ESP8266
 
 ## Components Needed
 
-- NodeMCU (ESP8266)
-- PIR Motion Sensor
-- LED
-- Resistors and connecting wires
+- NodeMCU (ESP8266) = 1 unit;
+- PIR Motion Sensor = 1 unit;
+- LED = 1 unit;
+- Resistors 220 ohm = 1 unit;
+- Project Board / BreadBoard = 1 unit;
+- connecting wires
 
 # Schematic:
 
@@ -110,6 +114,15 @@ void getPirValue(void) { // Deklarasi Pembacaan PIR
 ## Customization
 
 - Modify GUI: Adjust Blynk app settings to fit your needs.
+
+  - BLYNK Settings:
+    Use the Notification type Widget Box
+    ![BlYNK Settings](img/notif.png)<br/>
+    Image of Notification Box Widget selection<br/>
+  - Interface :
+    ![BlYNK Settings](img/notif2.jpg)<br/>
+    Image of Blynk PIR Alarm Interface.<br/>
+
 - Adjust Sensitivity: Change the PIR sensor's sensitivity as needed.
 - Enhance Features: Add additional functionalities such as logging or integration with other smart home systems.
 
@@ -123,4 +136,8 @@ void getPirValue(void) { // Deklarasi Pembacaan PIR
 - Blynk for providing a simple way to create IoT applications.
 - ESP8266 and NodeMCU for their versatile microcontroller capabilities.
 - The Arduino community for their support and resources.
-"# Burglar-Alarm-Using-Blynk-and-NodeMCU" 
+  "# Burglar-Alarm-Using-Blynk-and-NodeMCU"
+
+## Conclusion:
+
+- In this project the PIR sensor is connected to the NodeMCU to detect movement. If someone enters a room that has a PIR sensor, the PIR sensor will provide an output which will be read by the NodeMCU which will then make the LED light up and provide a notification on the Blynk Application.
